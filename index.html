@@ -100,82 +100,9 @@ input[type=text]:focus {
  </style>
  </head>
 <body style="margin:0 ;padding:0;">
- <script type="text/javascript">
- function full_screen()
-{
- // check if user allows full screen of elements. This can be enabled or disabled in browser config. By default its enabled.
- //its also used to check if browser supports full screen api.
- if("fullscreenEnabled" in document || "webkitFullscreenEnabled" in document || "mozFullScreenEnabled" in document || "msFullscreenEnabled" in document) 
- {
- if(document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled)
- {
- var element = document.getElementById("myIframe")
- //requestFullscreen is used to display an element in full screen mode.
- if("requestFullscreen" in element) 
- {
- element.requestFullscreen();
- } 
- else if ("webkitRequestFullscreen" in element) 
- {
- element.webkitRequestFullscreen();
- } 
- else if ("mozRequestFullScreen" in element) 
- {
- element.mozRequestFullScreen();
- } 
- else if ("msRequestFullscreen" in element) 
- {
- element.msRequestFullscreen();
- }
- }
- }
- else
- {
- alert("Y U NO GET FULLSCREEN!?!?!")
- }
-}
-function iframeDidLoad() {
- alert("Done");
-}
-	/*
-setInterval(function(){
-document.getElementById("p").innerHTML = "Current Website: "+document.getElementById('myIframe').src
-},1)
-*/setInterval(function(){
-	if(document.getElementById("myIframe").src == "https://www.google.com" || document.getElementById("myIframe").src == "https://google.com"){
-	document.getElementById("myIframe").src = "https://www.google.com&output=embed"
-	}
-},1)
-	
-function newSite() {
- var sites = document.getElementById("text").value
-	
- document.getElementById("myIframe").src = sites;
-} 
-</script>
- <div class="div">
- <center>
-	<input id="text" type="text" placeholder="enter here"/>
-<input type="button" value="GO" class="button button3" onClick="newSite()" />
- <input type="button" value="Fullscreen" onClick="full_screen()" class="button button4"/>
-	<button class="button button2"><a href="https://WebShark2.github.io/" download="unblock">Download</a></button>
-	
- </center>
- </div>
- <p/>
-<iframe id="myIframe" src="https://www.proxysite.com" width="100%" height="100%"></iframe>
-	<a href="javascript:(function(){document.write('<iframe src=\"https://www.proxysite.com\" width=\'100%\' height=\'100%\'></iframe>')})()">Drag Into Bookmark Bar</a>
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src="https://embed.tawk.to/5b02a58bd0f6723da57eb981/default";
-s1.charset="UTF-8";
-s1.setAttribute("crossorigin","*");
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
+<center>
+	<h1>WebShark Coming soon!! Stay Tuned for 6/25 at 3:45 PM!!</h1>
+	</center>
 	</body>
 </html>
 
